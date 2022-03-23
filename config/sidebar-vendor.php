@@ -20,7 +20,7 @@ return [
         ],[
             'icon' => 'fa fa-file',
             'title' => 'SQAC Document',
-            'url' => '/vendor/sqacdoc',
+            'url' => '/sqacdoc',
         ]
     ]
 ];

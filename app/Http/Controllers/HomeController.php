@@ -23,6 +23,10 @@ class HomeController extends Controller
 
             return view('dashboard-vendor');
 
+        } elseif(Auth::user()->role == 'reviewer') {
+
+            return view('dashboard-approver');
+
         }
 
     }

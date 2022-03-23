@@ -30,7 +30,7 @@ Route::group( ['as' => 'pekerja.','middleware' => ['auth']], function() {
     Route::get('/master-user','masteruser\LoginUserController@show')->name('masteruser');
 
     //vendor page
-    Route::get('/vendor/sqacdoc','vendors\SqacdocController@show')->name('masteruser');
+    Route::get('/sqacdoc','vendors\SqacdocController@show')->name('masteruser');
 
     //API
 

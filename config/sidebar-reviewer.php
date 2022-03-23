@@ -17,24 +17,10 @@ return [
             'icon' => 'fa fa-th-large',
             'title' => 'Dashboard',
             'url' => '/',
-            'route-name' => 'admin.index'
         ],[
-            'icon' => 'fa fa-layer-group',
-            'title' => 'KAP',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [
-                [
-                    'url' => '/monitoring',
-                    'title' => 'Monitoring',
-                    'route-name' => 'kap.monitoring'
-                ],
-                [
-                    'url' => '/equipment',
-                    'title' => 'Equipment',
-                    'route-name' => 'kap.equipment'
-                ],
-            ]
+            'icon' => 'fa fa-file',
+            'title' => 'SQAC Document',
+            'url' => '/sqacdoc',
         ]
     ]
 ];

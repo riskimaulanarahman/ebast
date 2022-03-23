@@ -251,8 +251,12 @@ var dataGrid = $("#grid-sqacdoc").dxDataGrid({
             if(options.data.requeststatus == 0) {
                 $('<button class="btn btn-danger btn-xs">Submit</button>').addClass('dx-button').on('dxclick', function(evt) {
                     evt.stopPropagation();
-                        console.log('submit')
+                        // console.log('submit')
+                        sendRequest(apiurl + "/sqacdoc/"+options.data.id, "PUT", {requeststatus:1});
+                        dataGrid.refresh();
+                        
                 }).appendTo(container);
+
             }
             
             }
